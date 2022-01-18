@@ -27,13 +27,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link m-5" href="#">Sobre mí</a>
+              <a class="nav-link m-5" href="#sobreMi">Sobre mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link m-5" href="#">Proyectos</a>
+              <a class="nav-link m-5" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link m-5" href="#">Contacto</a>
+              <a class="nav-link m-5" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -52,7 +52,7 @@
       </div>
     </div>
     <section class="sobreMi container">
-      <h2 class="titulos">Sobre mÍ</h2>
+      <h2 class="titulos" id="sobreMi">Sobre mÍ</h2>
       <div class="d-flex justify-content-around sobremi">
         <div class="sobremi_img">
           <img src="https://via.placeholder.com/200" alt="Foto de Javier Zalazar">
@@ -72,7 +72,7 @@
       </div>
     </section>
     <section class="proyectos container">
-      <h2 class="titulos">Proyectos</h2>
+      <h2 class="titulos" id="proyectos">Proyectos</h2>
       <div class="d-flex justify-content-around">
         <div class="card" style="width: 18rem;">
           <div class="poryecto_img">
@@ -99,9 +99,9 @@
       </div>
     </section>
     <section class="contacto container">
-      <h2 class="titulos">Contacto</h2>
+      <h2 class="titulos" id="contacto">Contacto</h2>
       <p>Si estás interesado en intercambiar palabras conmigo, siéntete libre de contactarme.</p>
-      <form action="">
+      <form action="./php/mail.php" method="post">
         <div class="inputRemitente">
           <input type="text" name="nombre" id="name" class="inputcontacto" placeholder="Nombre">
           <input type="email" name="email" id="email" class="inputcontacto" placeholder="Email">
@@ -109,14 +109,14 @@
         <div class="inputMensaje">
           <textarea name="mensaje" id="mensaje" class="mensaje" cols="75" rows="5"></textarea>
         </div>
-        <button type="submit" class="btn_enviar">Enviar</button>
+        <button type="submit" name="submit" class="btn_enviar">Enviar</button>
       </form>
     </section>
     <section class="container rrss">
       <p>Tambien puedes encontrarme en mis redes sociales</p>
       <div class="rrss_list">
-        <div><a href="https://github.com/MarioJavierZalazar"><i class="fab fa-github fa-3x"></i></a></div>
-        <div><a href="https://www.linkedin.com/in/mario-javier-zalazar/"><i class="fab fa-linkedin fa-3x"></i></a></div>
+        <div><a href="https://github.com/MarioJavierZalazar" target="_blank"><i class="fab fa-github fa-3x"></i></a></div>
+        <div><a href="https://www.linkedin.com/in/mario-javier-zalazar/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></div>
       </div>
     </section>
   </main>
