@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/215a6df78a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
-  <title>Mario javier Zalazar | Developer</title>
+  <title>JZalazar | Developer</title>
 </head>
 
 <body>
@@ -16,9 +17,9 @@
     <!-- Menu de navegacion + logo -->
     <nav class="navbar navbar-expand-lg justify-content-beteween">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./img/JaviLogo1.png" alt="Logo">
-        </a>
+        <div class="navbar-brand">
+          <img src="./img/logos/logorosa.horizontal.png" alt="Logo">
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -63,8 +64,10 @@
             Analytics. En mis tiempos libres aparte de dedicarme a mi familia, me enfoco a incrementar mis conocimiento
             sobre desarrollo, o crear algún sitio web.</p>
 
-          <p>Actualmente cuento con conocimientos en <span>html</span>, <span>css</span>, <span>sass</span>, además de <span>js</span>, <span>react</span>, <span>php</span> y <span>mysql</span>, gracias a mis años
-            como UXER aprendí sobre diseño, trabajando con <span>Figma</span>, <span>Miro</span> e <span>Illustrator</span>.</p>
+          <p>Actualmente cuento con conocimientos en <span>html</span>, <span>css</span>, <span>sass</span>, además de
+            <span>js</span>, <span>react</span>, <span>php</span> y <span>mysql</span>, gracias a mis años
+            como UXER aprendí sobre diseño, trabajando con <span>Figma</span>, <span>Miro</span> e
+            <span>Illustrator</span>.</p>
         </div>
       </div>
     </section>
@@ -72,21 +75,25 @@
       <h2 class="titulos">Proyectos</h2>
       <div class="d-flex justify-content-around">
         <div class="card" style="width: 18rem;">
-          <img src="./img/cafeImperium.PNG" class="card-img-top img-fluid" alt="" loading="lazy">
+          <div class="poryecto_img">
+            <img src="./img/cafeImperium.PNG" class="card-img-top img-fluid" alt="portada Cafe Imperium" loading="lazy">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Cafe Imperium</h5>
-            <p class="card-text">Sitio web para una cafeteria. Se hizo con: <span>HTML, CSS, JS y Boobstrap 4</span>.
+            <p class="card-text">Sitio web de una cafeteria sanisidrense en una sola pagina, se trabajo con <span>html</span>, <span>css</span>, <span>js</span> y <span>Boobstrap 4</span>.
             </p>
-            <a href="#" class="btn btn-primary">Ir al sitio</a>
+            <a href="https://mariojavierzalazar.github.io/cafeImperium/" target="_blank" class="btn_proyecto">Ir al sitio</a>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./img/cafeImperium.PNG" class="card-img-top img-fluid" alt="" loading="lazy">
+          <div class="poryecto_img">
+            <img src="./img/battlehorse.PNG" class="card-img-top img-fluid" alt="portada Cafe Imperium" loading="lazy">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Battlehorse</h5>
-            <p class="card-text">Sitio web y ecommerce sobre minituras y wargames. Se hizo con: <span>HTML, CSS, JS y
-                Boobstrap</span>.</p>
-            <a href="#" class="btn btn-primary">Ir al sitio</a>
+            <p class="card-text">Sitio web y ecommerce sobre minituras y wargames, se trabajo con <span>html</span>, <span>css</span>, <span>js</span> y <span>Boobstrap 5</span>.
+            </p>
+            <a href="https://mariojavierzalazar.github.io/battlehorse/" target="_blank" class="btn_proyecto">Ir al sitio</a>
           </div>
         </div>
       </div>
@@ -96,23 +103,27 @@
       <p>Si estás interesado en intercambiar palabras conmigo, siéntete libre de contactarme.</p>
       <form action="">
         <div class="inputRemitente">
-          <input type="text" name="nombre" id="name" class="inputname" placeholder="Nombre">
-          <input type="email" name="email" id="email" class="inputemail" placeholder="Email">
+          <input type="text" name="nombre" id="name" class="inputcontacto" placeholder="Nombre">
+          <input type="email" name="email" id="email" class="inputcontacto" placeholder="Email">
         </div>
         <div class="inputMensaje">
-          <textarea name="" id="" cols="50" rows="10"></textarea>
+          <textarea name="mensaje" id="mensaje" class="mensaje" cols="75" rows="5"></textarea>
         </div>
-        <button type="submit">Enviar</button>
+        <button type="submit" class="btn_enviar">Enviar</button>
       </form>
     </section>
-    <section class="rrss">
+    <section class="container rrss">
       <p>Tambien puedes encontrarme en mis redes sociales</p>
-      <div>Github</div>
-      <div>Linkedin</div>
+      <div class="rrss_list">
+        <div><a href="https://github.com/MarioJavierZalazar"><i class="fab fa-github fa-3x"></i></a></div>
+        <div><a href="https://www.linkedin.com/in/mario-javier-zalazar/"><i class="fab fa-linkedin fa-3x"></i></a></div>
+      </div>
     </section>
   </main>
   <footer>
-
+    <div class="text-center">
+      <p class="footertext">© Copyright 2021 by JZALAZAR</p>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

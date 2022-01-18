@@ -31,6 +31,7 @@ body {
 .nav-link {
     color: var(--color-primario);
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav-link:hover{
@@ -51,12 +52,14 @@ h2 {
 }
 
 .titulos {
+    font-weight: bold;
     margin: 20px;
     text-transform: uppercase;
 }
 
+
 /* -- Sobre mí -- */
-.sobremi {
+.sobremi, .proyectos, .contacto {
     margin: 50px auto;
 }
 
@@ -72,3 +75,111 @@ h2 {
     color: var(--color-secundario);
     text-transform: uppercase;
 }
+
+/* -- Poryectos -- */
+.proyectos .card {
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+
+.proyectos .card .poryecto_img img{
+    border-radius: 15px 15px 0 0;
+    border: 1px solid #000;
+}
+
+.proyectos .card .card-body{
+    background-color: #D9D9D9;
+    border-radius: 0 0 15px 15px;
+}
+
+.proyectos .card .card-body .card-title {
+    color: var(--color-primario);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.proyectos .card .card-body .card-text {
+    color: var(--color-negativo);
+}
+
+.proyectos .card .card-body .card-text span {
+    color: #0077B5;
+    text-transform: uppercase;
+}
+
+.proyectos .card .card-body .btn_proyecto {
+    border-radius: 25px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 10px;
+    color: var(--color-positivo);
+    background-color: var(--color-primario);
+}
+
+.proyectos .card .card-body .btn_proyecto:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-negativo);
+}
+
+
+/* -- Contacto -- */
+
+.contacto .inputRemitente {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contacto .inputRemitente .inputcontacto {
+    margin: 20px;
+    width: 300px;
+    padding: 2px 20px;
+    border-radius: 15px;
+}
+
+.contacto .inputMensaje .mensaje {
+    resize: none;
+    padding: 2px 20px;
+    border-radius: 15px;
+}
+
+.btn_enviar {
+    border-radius: 25px;
+    margin: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 3px 50px;
+    color: var(--color-positivo);
+    background-color: var(--color-primario);
+}
+
+/* -- RRSS -- */
+.rrss .rrss_list {
+    display: flex;
+    justify-content: center;
+}
+
+.rrss .rrss_list a{
+    text-decoration: none;
+    margin: 10px 30px;
+}
+
+.rrss .rrss_list a .fa-github{
+    color: #fafafa;
+}
+
+.rrss .rrss_list a .fa-linkedin{
+    color: #0077b5;
+}
+
+
+/* -- Footer -- */
+footer div .footertext{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 0.75rem;
+    color: #7B7B7B;
+}
+
