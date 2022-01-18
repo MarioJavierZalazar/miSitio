@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root{
+    --color-negativo: #232323;
+    --color-positivo: #f2f2f2;
+    --color-neutro: #7b7b7b;
+    --color-primario: #f92672;
+    --color-secundario: #66d9ef;
+    --color-terciario: #fd971f;
+    --color-cuarto: #a6e22e;
+    --font-size: 18px;
+    --font-family: 'Lato', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -- Generales -- */
+body {
+    background-color: var(--color-negativo);
+    color: var(--color-positivo);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+/* -- Header -- */
+.nav-link {
+    color: var(--color-primario);
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: var(--color-secundario);
+}
+
+/* -- Main -- */
+h1{
+    color: var(--color-secundario);
+}
+
+h2 {
+    color: var(--color-primario);
+}
+
+.hero-img{
+    margin: 50px auto;
+}
+
+.titulos {
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+/* -- Sobre mí -- */
+.sobremi {
+    margin: 50px auto;
+}
+
+.sobremi .sobremi_img {
+    margin: 5px 20px;
+}
+
+.sobremi .sobremi_img img {
+    border-radius: 100%;
+}
+
+.sobremi .sobremi_texto span {
+    color: var(--color-secundario);
+    text-transform: uppercase;
+}
