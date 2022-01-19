@@ -1,46 +1,17 @@
 <?php
 
-$errores = '';
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+$mensaje_email = $_POST['mensaje'];
 
-if (isset($_POST['submit'])) {
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $mensaje = $_POST['mensaje'];
+$para      = 'mariojavierzalazar@gmail.com';
+$titulo    = 'Contacto por sitio web';
+$mensaje   = $mensaje_email . "\r\n";
+$cabeceras = 'From:'. $email . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
 
-    if(!empty($nombre)){
-        $nombre = trim($nombre);
-        $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
-    } else {
-        $errores .= 'Cargar nombre';
-    }
-
-    if(!empty($email)){
-        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
-
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL))
-        $errores .= 'Cargar email valido';
-
-    } else {
-        $errores .= 'Cargar email';
-    }
+mail($para, $titulo, $mensaje, $cabeceras);
 
 
-    if(!empty($mensaje)){
-        $mensaje = htmlspecialchars($mensaje);
-        $mensaje = trim($mensaje);
-        $mensaje = stripslashes($mensaje);
-    } else {
-        $errores .= 'Cargar mensaje'
-    }
-
-    if (!$errores){
-        $enviar_a = 'mariojavierzalazar@gmail.com';
-        $asunto = 'Mensaje desde mi sitio';
-        $mensaje_email = 'De: $nombre \n';
-        $mensaje_email .= 'Correo: $correo \n';
-        $mensaje_email .= 'Mensaje: ' . $mensaje;
-
-        mail($enviar_a, $asunto, $mensaje_email)
-    }
-}
+header("Location: ../index.html");
 ?>
